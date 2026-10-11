@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel ="stylesheet" href ="style.css">
+        <link rel="Main" href="index.html">
+    </head>
+    <body>
+        <nav class ="id">
+            <div class="logo">MY LOGO</div>
+            <ul class="id-links">
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="who.html">Who is HE</a></li>
+                <li><a href="Group.html">Group</a></li>
+                <li><a href ="knowledge.html">Knowledge</a></li>
+            </ul>
+        </nav>
+        <section id="who">
+            <h1> Cid Kagneou</h1>
+            <p> He is essitinalty a background charecter</p>
+            <p> THe Child of a Noble Family</p>
+            <p> Orignially he was born into this world after getting hit by a truck</p>
+            
+    </section>
+    <script>
+            const buttons = document.querySelectorAll("[data-tab]");
+            const sections = document.querySelectorAll("section");
+
+            buttons.forEach(button => {
+            button.addEventListener("click", () => {
+            sections.forEach(section => {
+            section.hidden = section.id !== button.dataset.tab;
+            });
+        });
+         });
+    </script>
+    </body>
+</html>

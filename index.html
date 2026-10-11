@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class ="id">
+            <div class="logo">MY LOGO</div>
+            <ul class="id-links">
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="who.html">Who is HE</a></li>
+                <li><a href="Group.html">Group</a></li>
+                <li><a href ="knowledge.html">Knowledge</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h1> Emmineince in the Shadow</h1>
+            <p> Main charecter Cid Kagneou</p>
+            <p> Main Charecter is Shadow</p>
+            <p> A socially deranged person thats obseesed with surpassing humane limits</p>
+            <p>He is known for his mainly his Shadowy Nature and obessesoin</p>
+            
+
+            <div id="main-character">
+                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf-c10wacSoObX7auCKbHzR2bJb_5Bs8bIjBPjrLGxLAyxfmBb8tScGHs:https://i.pinimg.com/736x/4e/5f/ed/4e5fed9bc4c4759c897845fad076fc5e.jpg&s=10" alt="Main Character">
+            </div>
+        </section>
+        <script>
+            const buttons = document.querySelectorAll("[data-tab]");
+            const sections = document.querySelectorAll("section");
+
+            buttons.forEach(button => {
+            button.addEventListener("click", () => {
+            sections.forEach(section => {
+            section.hidden = section.id !== button.dataset.tab;
+            });
+        });
+         });
+        </script>
+        </body>
+    </body>
+</html>

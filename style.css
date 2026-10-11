@@ -1,0 +1,42 @@
+body {
+  margin:0px;
+  font-family: Arial, sans-serif;
+
+}
+.id { 
+  color:aliceblue;
+  background-color: #6a39c5; /* Dark gray background */
+  display: flex;
+  justify-content: space-between; /* Pushes logo to left, links to right */
+  align-items: center; /* Vertically centers the content */
+  padding: 15px 30px;
+
+}
+.id-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Makes the list items sit side-by-side horizontally */
+    gap: 20px; /* Adds spacing between each link */
+
+}
+.main-character-img {
+  text-align:center;
+}
+  
+.id-links a {
+  color:aliceblue;
+  text-decoration: none;
+}
+.id-links a:hover {  border-radius: 10px; /* Adds rounded corners to the main character container */
+  overflow: hidden; /* Ensures the image doesn't overflow the rounded corners */      
+  
+  margin-top: 20px; /* Adds some space above the main character image */
+
+
+  background-color: rgb(56, 52, 52);
+  padding: 7.5px 15px;
+  font-size: 17px;
+
+}
+
